@@ -1,5 +1,5 @@
 # emby-danmaku
-感谢https://github.com/weizhenye/Danmaku分享的弹幕api
+感谢https://github.com/weizhenye/Danmaku 分享的弹幕api
 ## 说明
 在emby网页播放器中开启弹幕
 ## 使用方法
