@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       F2bbb
-// @match        http://192.168.0.103:8096/web/index.html
+// @match        https://127.0.0.1:8096/web/index.html
 // @icon         https://www.google.com/s2/favicons?domain=0.103
 // @require https://cdn.jsdelivr.net/npm/danmaku/dist/danmaku.min.js
 // @require  https://gist.github.com/raw/2625891/waitForKeyElements.js
@@ -96,9 +96,8 @@ function actionFunction (is_init=true) {
     }else{
         console.log("secondly loading!!")
     }
-    var ori_anime=document.querySelector("h2[class='videoOsdParentTitle']").innerHTML
+    var ori_anime=document.querySelector("h3[class='videoOsdParentTitle']").innerHTML
     var anime= ori_anime
-
 
     if(GM_getValue(ori_anime)){
         anime=GM_getValue(ori_anime)
@@ -322,6 +321,6 @@ function changeVideo(){
 }
 (function() {
     'use strict';
-    waitForKeyElements ("div[class='flex flex-grow align-items-center flex-shrink-zero']",wait1);
+    waitForKeyElements ("div[class='mdl-spinner hide']",wait1);
     // Your code here...
 })();
